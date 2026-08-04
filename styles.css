@@ -86,8 +86,38 @@ body.dark-mode {
 }
 
 /* ///ADD/// Skip Link Styles */
+.skip-link {
+  background: #319795;
+  color: #fff;
+  font-weight: 700;
+  left: 50%;
+  padding: 4px;
+  position: absolute;
+  transform: translateY(-100%);
+}
+
+.skip-link:focus {
+  transform: translateY(0%);
+}
+
 
 /* ///ADD/// Navigation Styles */
+.mobile-nav {
+  text-align: center;
+}
+
+.menu-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
 
 /* ///ADD/// Global Layout Styles */
 
