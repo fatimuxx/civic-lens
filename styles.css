@@ -87,43 +87,42 @@ body.dark-mode {
 
 /* ///ADD/// Skip Link Styles */
 .skip-link {
-  background: #319795;
-  color: #fff;
+  background:var(--blue-bulletin);
+  color: var(--watchdog-white);
   font-weight: 700;
   left: 50%;
-  padding: 4px;
+  padding: 4px 10px;
   position: absolute;
   transform: translateY(-100%);
 }
 
-.skip-link:focus {
-  transform: translateY(0%);
-}
 
 
 /* ///ADD/// Navigation Styles */
 
 .mobile-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: var(--blue-bulletin);
+  text-align: center;
+  padding-bottom:0.5rem;
 }
 
 .menu-button {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  color:var(--watchdog-white);
   font-weight: bold;
-  font-size: 35px;
+  padding:0.5rem 0.5rem;
 }
 
-.menu {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-  width: 100%;
-  text-align: center;
-  padding: 1em;
+.menu li{
+  margin: 0.5rem 0;
+}
+.menu li a{
+  display:inline-block;
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  font-weight: bold;
 }
 
 /* ///ADD/// Global Layout Styles */
@@ -132,6 +131,13 @@ body{
   line-height: 1.6;
   padding: 1em;
 }
+main{
+  padding: 1em;
+  max-width: 900px;
+  margin: 0 auto;
+}
+/* ///ADD/// Global Text Styles */
+
 
 h1{
   font-weight: bold;
@@ -146,9 +152,21 @@ h1{
   padding:1em;
 
 }
+h2{
+  font-weight: bold;
+  font-size: 30px;
+  padding: 0.5em;
+}
+h3{
+  font-weight: bold;
+  font-size: 25px;
+  padding: 0.5em;
+}
+p{
+  font-size: 18px;
+  padding: 0.5em;
+}
 
-
-/* ///ADD/// Global Text Styles */
 a {
   text-decoration: none;
   color: inherit;
