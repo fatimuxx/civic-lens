@@ -102,26 +102,57 @@ body.dark-mode {
 
 
 /* ///ADD/// Navigation Styles */
+
 .mobile-nav {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .menu-button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  font-weight: bold;
+  font-size: 35px;
 }
 
 .menu {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
+  width: 100%;
   text-align: center;
+  padding: 1em;
 }
 
 /* ///ADD/// Global Layout Styles */
+body{
+  font-family: var(--font-body);
+  line-height: 1.6;
+  padding: 1em;
+}
+
+h1{
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  padding: 0.5em;
+}
+.tagline{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding:1em;
+
+}
+
 
 /* ///ADD/// Global Text Styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 
 /* ///ADD/// medium styles 620px */
