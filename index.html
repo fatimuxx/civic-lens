@@ -23,7 +23,10 @@
 <body>
 <!-- ADD semantic and validated HTML -->
 <!-- ADD skip to main content -->
- <main id="main-content">   
+ <main id="main-content">  
+  <a class="skip-to-content-link" href="#main-content">
+  Skip to content
+</a> 
     <button id="theme-toggle" aria-label="Toggle light/dark mode">
       <svg width="35px" height="35px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
         <defs><clipPath id="a"><path d="m18.512 18.512h62.977v62.977h-62.977z"/></clipPath></defs>
@@ -111,22 +114,35 @@
         
       <h2>Stay Informed. Stay Empowered.</h2>
         <p>Receive text messages with the news you want to know.</p>
+
+        <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+          
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name"> 
         
-        Name
+        <label for="mobile">Mobile</label>
+        <input type="tel" id="mobile" name="mobile">
         
-        Mobile
+        <label for="notification-preferences"></label>Notification Preferences</label>
+
+        <input type="radio" id="pref-breaking-news" name="notification-preferences" value="breaking-news">
+        <label for="pref-breaking-news">Breaking News</label>
+        <input type="radio" id="pref-politics" name="notification-preferences" value="politics">
+        <label for="pref-politics">Politics</label>
+        <input type="radio" id="pref-weather" name="notification-preferences" value="weather">
+        <label for="pref-weather">Weather</label>
+        <input type="radio" id="pref-sports" name="notification-preferences" value="sports">
+        <label for="pref-sports">Sports</label>
+        <input type="radio" id="pref-entertainment" name="notification-preferences" value="entertainment">
+        <label for="pref-entertainment">Entertainment</label>
+        <input type="radio" id="pref-world" name="notification-preferences" value="world">
+        <label for="pref-world">World</label>
+        <input type="radio" id="pref-financial" name="notification-preferences" value="financial">
+        <label for="pref-financial">Financial</label>
         
-        Notification Preferences
         
-        Breaking News
-        Politics
-        Weather
-        Sports
-        Entertainment
-        World
-        Financial
-        
-        Subscribe
+        <button type="submit">Subscribe</button>
+        </form>
       
       Follow Us
         Twitter/X
