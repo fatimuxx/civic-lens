@@ -211,6 +211,12 @@ blockquote{
   background-color: var(--news-flash);
   color:var(--watchdog-white);
   box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.news:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .news h3{
@@ -235,6 +241,12 @@ blockquote{
   color: var(--truth-text);
   border: 1px solid var(--story-subtitle);
   box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.featured-article:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .featured-article h3{
