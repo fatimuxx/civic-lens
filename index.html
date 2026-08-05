@@ -160,28 +160,26 @@
 
         <form action="https://wp.zybooks.com/form-viewer.php" method="post">
 
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name"> 
-        
-        <label for="mobile">Mobile</label>
-        <input type="tel" id="mobile" name="mobile">
+        <div class="name-mobile-row">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+          </div>
+          <div>
+            <label for="mobile">Mobile</label>
+            <input type="tel" id="mobile" name="mobile">
+          </div>
+        </div>
         
         <fieldset>
           <legend>Notification Preferences</legend>
-          <input type="radio" id="pref-breaking-news" name="notification-preferences" value="breaking-news">
-          <label for="pref-breaking-news">Breaking News</label>
-          <input type="radio" id="pref-politics" name="notification-preferences" value="politics">
-          <label for="pref-politics">Politics</label>
-          <input type="radio" id="pref-weather" name="notification-preferences" value="weather">
-          <label for="pref-weather">Weather</label>
-          <input type="radio" id="pref-sports" name="notification-preferences" value="sports">
-          <label for="pref-sports">Sports</label>
-          <input type="radio" id="pref-entertainment" name="notification-preferences" value="entertainment">
-          <label for="pref-entertainment">Entertainment</label>
-          <input type="radio" id="pref-world" name="notification-preferences" value="world">
-          <label for="pref-world">World</label>
-          <input type="radio" id="pref-financial" name="notification-preferences" value="financial">
-          <label for="pref-financial">Financial</label>
+          <label><input type="radio" name="notification-preferences" value="breaking-news">Breaking News</label>
+          <label><input type="radio" name="notification-preferences" value="politics">Politics</label>
+          <label><input type="radio" name="notification-preferences" value="weather">Weather</label>
+          <label><input type="radio" name="notification-preferences" value="sports">Sports</label>
+          <label><input type="radio" name="notification-preferences" value="entertainment">Entertainment</label>
+          <label><input type="radio" name="notification-preferences" value="world">World</label>
+          <label><input type="radio" name="notification-preferences" value="financial">Financial</label>
         </fieldset>
         
         
