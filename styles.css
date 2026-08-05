@@ -164,15 +164,6 @@ h2{
   padding: 0.5em;
   color:var(--blue-bulletin);
 }
-h3{
-  font-weight: bold;
-  font-size: 25px;
-  padding: 0.5em;
-}
-p{
-  font-size: 18px;
-  padding: 0.5em;
-}
 
 a {
   text-decoration: none;
@@ -222,6 +213,16 @@ blockquote{
   color: var(--truth-text);
   border: 1px solid var(--story-subtitle);
   box-shadow: var(--shadow);
+}
+
+.featured-article h3{
+  border-bottom: 2px solid var(--story-subtitle);
+  font-size:20px
+}
+
+.featured-article p{
+  font-size: 16px;
+  padding:0.5em;
 }
 
 /* ///ADD/// medium styles 620px */
