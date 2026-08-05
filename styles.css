@@ -256,7 +256,25 @@ form label{
   font-weight: bold;
   padding: 0.5em;
  }
+ form fieldset label{
+  display:inline-block;
+  color:var(--watchdog-white);
+  margin-right: 1em;
+ }
 
+ form button{
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: var(--shadow);
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+  border: none;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+ }
 /* ///ADD/// medium styles 620px */
 @media (max-width: 620px) {
   
