@@ -178,6 +178,27 @@ a {
   text-decoration: none;
   color: inherit;
 }
+blockquote{
+  font-family: var(--font-heading);
+  font-weight:bold;
+  text-align: center;
+  font-size: 20px;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.news-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.news{
+  background-color: var(--news-flash);
+  color:var(--watchdog-white);
+  box-shadow: var(--shadow);
+}
 
 
 /* ///ADD/// medium styles 620px */
