@@ -75,6 +75,17 @@ body.dark-mode {
   background-color: var(--truth-text);
   color: var(--watchdog-white);
 }
+body.dark-mode h2 {
+  color: var(--watchdog-white);
+}
+body.dark-mode blockquote {
+  color: var(--watchdog-white);
+}
+body.dark-mode .featured-article {
+  background-color: #444;
+  color: var(--watchdog-white);
+  border-color: var(--story-subtitle);
+}
 #theme-toggle {
   position: absolute;
   top: 1rem;
@@ -411,6 +422,40 @@ form label{
 
 
 /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
+@media (prefers-color-scheme: dark) {
+  body:not(.light-mode) {
+    background-color: var(--truth-text);
+    color: var(--watchdog-white);
+  }
+  body:not(.light-mode) h2 {
+    color: var(--watchdog-white);
+  }
+  body:not(.light-mode) .featured-article {
+    background-color: #444;
+    color: var(--watchdog-white);
+    border-color: var(--story-subtitle);
+  }
+  body:not(.light-mode) .featured-article h3 {
+    border-color: var(--story-subtitle);
+  }
+  body:not(.light-mode) blockquote {
+    color: var(--watchdog-white);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body:not(.dark-mode) {
+    background-color: var(--watchdog-white);
+    color: var(--truth-text);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none;
+    animation: none;
+  }
+}
 
 
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
