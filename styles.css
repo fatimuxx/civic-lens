@@ -139,12 +139,15 @@ body.dark-mode {
 body{
   font-family: var(--font-body);
   line-height: 1.6;
-  padding: 1em;
 }
 main{
   padding: 1em;
   max-width: 900px;
   margin: 0 auto;
+}
+header {
+  background-color: var(--blue-bulletin);
+  position: relative;
 }
 /* ///ADD/// Global Text Styles */
 
