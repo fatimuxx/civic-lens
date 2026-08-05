@@ -320,7 +320,7 @@ form label{
   height: 1em;
   border: 2px solid var(--watchdog-white);
   border-radius: 0;
-  background-color: transparent;
+  background-color: var(--watchdog-white);
   cursor: pointer;
   flex-shrink: 0;
  }
@@ -364,6 +364,12 @@ form label{
   padding: 0.5em;
   margin:0.5em;
   border-radius: 4px;
+  transition: var(--transition);
+  cursor: pointer;
+ }
+
+ footer ul li:hover {
+  background-color: var(--blue-bulletin);
  }
 
  .social-links {
