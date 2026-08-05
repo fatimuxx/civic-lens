@@ -319,11 +319,16 @@ form label{
 
 /* ///ADD/// large styles 920px */
 @media (max-width: 920px) {
-  
+  .featured-articles-grid{
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* ///ADD/// x-large styles 1024px */
 @media (max-width: 1024px) {
+  h1{
+    font-size: 50px;
+  }
   
 } 
 
