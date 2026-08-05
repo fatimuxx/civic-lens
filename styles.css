@@ -96,7 +96,7 @@ body.dark-mode {
   transform: translateY(-100%);
 }
 .skip-to-content-link:focus {
-  transform: translateY(-100%);
+  transform: translateY(0%);
 }
 
 
@@ -107,6 +107,7 @@ body.dark-mode {
   background-color: var(--blue-bulletin);
   text-align: center;
   padding-bottom:0.5rem;
+  position:relative;
 }
 
 .menu-button {
@@ -114,6 +115,7 @@ body.dark-mode {
   color:var(--watchdog-white);
   font-weight: bold;
   padding:0.5rem 0.5rem;
+  cursor: pointer;
 }
 
 .menu li{
@@ -121,11 +123,16 @@ body.dark-mode {
 }
 .menu li a{
   display:inline-block;
-  background-color: var(--blue-bulletin);
+  background-color: var(--news-flash);
   color: var(--watchdog-white);
   padding: 0.5rem 1rem;
   border-radius: 2px;
   font-weight: bold;
+  transition: var(--transition);
+}
+
+.menu li a:hover{
+  background-color: var(--blue-bulletin);
 }
 
 /* ///ADD/// Global Layout Styles */
