@@ -86,13 +86,16 @@ body.dark-mode {
 }
 
 /* ///ADD/// Skip Link Styles */
-.skip-link {
-  background:var(--blue-bulletin);
+.skip-to-content-link {
+  background: var(--blue-bulletin);
   color: var(--watchdog-white);
   font-weight: 700;
   left: 50%;
   padding: 4px 10px;
   position: absolute;
+  transform: translateY(-100%);
+}
+.skip-to-content-link:focus {
   transform: translateY(-100%);
 }
 
@@ -158,10 +161,18 @@ h1{
   padding:0 1rem 1rem 1rem;
 
 }
+.tagline2{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding: repeat(4, 0.5em);
+  padding:0 1rem 1rem 1rem;
+
+}
 h2{
   font-family: var(--font-heading);
   font-size: 30px;
-  padding: 0.5em;
+  padding: 0.5em 0;
   color:var(--blue-bulletin);
 }
 
@@ -174,7 +185,7 @@ blockquote{
   font-weight:bold;
   text-align: center;
   font-size: 20px;
-  padding: 0.5em;
+  padding: 0.5em 0;
   margin-bottom: 0.5em;
 }
 /*GRIDS */
